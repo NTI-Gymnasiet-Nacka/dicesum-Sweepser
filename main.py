@@ -4,14 +4,15 @@
 
 def main():
     
-    maxvalue1, maxvalue2 = map(int, input("Skriv maximum mängd sidor på två tärningar: ").split()) # Tar två värden
+    max_value1=10
+    max_value2=10
 
    
     total = {} # Sparar värderna
 
    
-    for i in range(1, maxvalue1 + 1):
-        for j in range(1, maxvalue2 + 1):
+    for i in range(1, max_value1 + 1):
+        for j in range(1, max_value2 + 1):
             summa = i + j
             if summa in total:
                 total[summa] += 1 # Sparar värdena i total
