@@ -8,21 +8,21 @@ def main():
     max_value2=10
 
    
-    total = {} # Sparar värderna
+    total = {} 
 
    
     for i in range(1, max_value1 + 1):
         for j in range(1, max_value2 + 1):
             summa = i + j
             if summa in total:
-                total[summa] += 1 # Sparar värdena i total
+                total[summa] += 1 
             else:
                 total[summa] = 1
 
-    max_frequency = max(total.values()) # Tar alla som har störst värde
+    max_frequency = max(total.values()) 
     
     summorna = []
-    for summa, x in total.items(): # Går igenom allt och tar fram dom som har samm värde
+    for summa, x in total.items(): 
         
         if x == max_frequency:
             summorna.append(summa)
